@@ -1,1 +1,2 @@
-export  const  fetchUrl = 'http://127.0.0.1:8000/'
+// export  const  fetchUrl = 'http://127.0.0.1:8000/'
+export  const  fetchUrl = 'https://jsonplaceholder.typicode.com/posts'

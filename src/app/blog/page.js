@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 
 async function OurWorks() {
-    const res = await fetch(`${fetchUrl}api/blog/get/?ordering=-id`, { caches: 'no-store' })
+    const res = await fetch(`${fetchUrl}`, { caches: 'no-store' })
     const data = await res.json()
     return data
 }
