@@ -1,0 +1,34 @@
+.loadingFlex {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.loading {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.loadingImage {
+    height: 320px;
+    width: 100%;
+    background-color: #a7a7a747;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    animation: spiner 2s infinite;
+}
+
+.loadingTitle {
+    height: 15px;
+    width: 100%;
+    background-color: #a7a7a747;
+    border-radius: 20px;
+    margin-bottom: 7px;
+    animation: spiner 2s infinite;
+}
+
