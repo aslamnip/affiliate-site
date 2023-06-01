@@ -33,7 +33,7 @@ const Form = (props) => {
             .then(res =>{
         if(res){
              router.push('/new-url');
-        })
+        }})
             .catch(err => console.log(err))
     }
     return (
