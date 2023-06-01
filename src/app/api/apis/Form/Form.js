@@ -22,7 +22,7 @@ const Form = (props) => {
         inputValue.append('item', 'null')
         inputValue.append('name', inputValue.name)
         inputValue.append('item', inputValue.email)
-        fetch(fetchUrl, {
+        fetch("https://aslam84.pythonanywhere.com/api/subscriber/email/", {
             method,
             body: fromInfo
 
@@ -30,7 +30,6 @@ const Form = (props) => {
             .then(res => console.log(res))
             .catch(err => console.log(err))
     }
-    console.log(inputValue)
     return (
         <div>
             <div className='form_section'>
