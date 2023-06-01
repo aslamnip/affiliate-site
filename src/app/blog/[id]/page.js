@@ -20,7 +20,7 @@ export default async function Page({ params }) {
                 <h1 className='TitleText'> {singleContennt.title}</h1>
                 <div className='bodyText' dangerouslySetInnerHTML={{ __html: singleContennt.body }} />
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/NgjERPTaC4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src={`https://www.youtube.com/embed/${singleContennt.video}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
                 <Form singleContennt={singleContennt} />
