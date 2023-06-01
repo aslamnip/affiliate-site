@@ -22,9 +22,9 @@ const Form = (props) => {
         e.preventDefault();
         console.log('click')
         const inputData = new FormData()
-        inputData.append('item', 'null')
+        inputData.append('item', singleContennt.title)
         inputData.append('name', inputValue.name)
-        inputData.append('item', inputValue.email)
+        inputData.append('email', inputValue.email)
         fetch("https://aslam84.pythonanywhere.com/api/subscriber/email/", {
             method: "POST",
             body: inputData,
