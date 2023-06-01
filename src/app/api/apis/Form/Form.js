@@ -1,7 +1,9 @@
 'use client'
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Form = (props) => {
+    const router = useRouter();
     const { singleContennt } = props
     const [inputValue, setInputValue] = useState({
         name: '',
@@ -17,7 +19,8 @@ const Form = (props) => {
         }
         setInputValue(newInput)
     }
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         const inputData = new FormData()
         inputValue.append('item', 'null')
         inputValue.append('name', inputValue.name)
@@ -27,7 +30,10 @@ const Form = (props) => {
             body: fromInfo
 
         })
-            .then(res => console.log(res))
+            .then(res =>{
+        if(res){
+             router.push('/new-url');
+        })
             .catch(err => console.log(err))
     }
     return (
@@ -43,11 +49,9 @@ const Form = (props) => {
                         <input onChange={handleInput} value={inputValue.email} className='inputClass' type="email" name="email" />
                     </div>
                 </form>
-                <a href={singleContennt.url} target="_blank" rel="noopener noreferrer">
                     <button style={{ background: singleContennt.btn_background, color: singleContennt.btn_color }} >
                         {singleContennt.btn}
                     </button>
-                </a>
             </div>
         </div>
     );
