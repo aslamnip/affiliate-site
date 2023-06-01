@@ -5,7 +5,7 @@ import Form from '@/app/api/apis/Form/Form';
 
 async function SIngleWorks(id) {
     // const res = await fetch(`${fetchUrl}api/blog/get/${id}`, { caches: 'no-store' })
-    const res = await fetch(`${fetchUrl}/${id}`, { caches: 'no-store' })
+    const res = await fetch(`${fetchUrl}api/blog/get/${id}`, { caches: 'no-store' })
     const data = await res.json()
     return data
 }
