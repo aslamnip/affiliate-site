@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+import Router from `next/router`;
 
 const Form = (props) => {
     const router = useRouter();
@@ -33,7 +33,9 @@ const Form = (props) => {
         })
             .then(res =>{
         if(res){
-             router.push('/new-url');
+              <Router>
+     <Redirect to="/new-url" />
+    </Router>
         }})
             .catch(err => console.log(err))
     }
