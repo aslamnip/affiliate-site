@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Router from `next/router`;
+import Router from 'next/router';
 
 const Form = (props) => {
     const { singleContennt } = props
