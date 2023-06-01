@@ -21,6 +21,7 @@ const Form = (props) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log('click")
         const inputData = new FormData()
         inputValue.append('item', 'null')
         inputValue.append('name', inputValue.name)
