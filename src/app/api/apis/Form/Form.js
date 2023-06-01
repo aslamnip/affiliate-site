@@ -33,7 +33,8 @@ const Form = (props) => {
             .then(res =>{
                 if(res){
                      console.log(res);
-                     window.location.assign("https://www.google.com/");
+//                     window.location.assign("https://www.google.com/");
+                       window.open('https://www.google.com/', '_blank');
                 }})
             .catch(err => console.log(err))
     }
