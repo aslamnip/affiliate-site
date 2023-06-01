@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Router from 'next/router';
+// import Router from 'next/router';
 
 const Form = (props) => {
     const { singleContennt } = props
@@ -32,8 +32,8 @@ const Form = (props) => {
         })
             .then(res =>{
                 if(res){
-                     console.log(res)
-                     Router.push('/new-url');
+                     console.log(res);
+                     window.location.assign("https://www.google.com/");
                 }})
             .catch(err => console.log(err))
     }
