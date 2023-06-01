@@ -31,7 +31,7 @@ body{
     font-size: 50px;
 }
 
-.contentDetails submitbutton {
+.contentDetails .submitbutton {
     border: none;
     outline:  none;
     padding: 10px;
