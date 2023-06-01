@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-// import Router from 'next/router';
+import Router from 'next/router';
 
 const Form = (props) => {
     const { singleContennt } = props
@@ -33,7 +33,7 @@ const Form = (props) => {
             .then(res =>{
                 if(res){
                      console.log(res)
-                     //Router.push('/new-url');
+                     Router.push('/new-url');
                 }})
             .catch(err => console.log(err))
     }
@@ -43,11 +43,11 @@ const Form = (props) => {
                 <form onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name</label>
-                        <input onChange={handleInput} value={inputValue.name} className='inputClass' type="text" name='name' />
+                        <input required onChange={handleInput} value={inputValue.name} className='inputClass' type="text" name='name' />
                     </div>
                     <div>
                         <label htmlFor="email">Email</label>
-                        <input onChange={handleInput} value={inputValue.email} className='inputClass' type="email" name="email" />
+                        <input required onChange={handleInput} value={inputValue.email} className='inputClass' type="email" name="email" />
                     </div>
                        <input className='submitbutton' style={{ background: singleContennt.btn_background, color: singleContennt.btn_color }}  type="submit" value=  {singleContennt.btn} />
 
