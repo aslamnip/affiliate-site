@@ -22,19 +22,17 @@ const Form = (props) => {
         e.preventDefault();
         console.log('click')
         const inputData = new FormData()
-        inputValue.append('item', 'null')
-        inputValue.append('name', inputValue.name)
-        inputValue.append('item', inputValue.email)
+        inputData.append('item', 'null')
+        inputData.append('name', inputValue.name)
+        inputData.append('item', inputValue.email)
         fetch("https://aslam84.pythonanywhere.com/api/subscriber/email/", {
-            method,
+            method: "POST,
             body: fromInfo
 
         })
             .then(res =>{
         if(res){
-              <Router>
-                   <Redirect to="/new-url" />
-              </Router>
+             Router.push('/new-url');
         }})
             .catch(err => console.log(err))
     }
