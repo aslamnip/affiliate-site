@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Router from `next/router`;
 
 const Form = (props) => {
-    const router = useRouter();
     const { singleContennt } = props
     const [inputValue, setInputValue] = useState({
         name: '',
@@ -34,8 +33,8 @@ const Form = (props) => {
             .then(res =>{
         if(res){
               <Router>
-     <Redirect to="/new-url" />
-    </Router>
+                   <Redirect to="/new-url" />
+              </Router>
         }})
             .catch(err => console.log(err))
     }
