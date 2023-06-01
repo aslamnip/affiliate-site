@@ -26,7 +26,7 @@ const Form = (props) => {
         inputData.append('name', inputValue.name)
         inputData.append('item', inputValue.email)
         fetch("https://aslam84.pythonanywhere.com/api/subscriber/email/", {
-            method: "POST,
+            method: "POST",
             body: fromInfo
 
         })
