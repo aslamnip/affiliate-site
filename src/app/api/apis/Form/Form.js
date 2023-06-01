@@ -49,10 +49,10 @@ const Form = (props) => {
                         <label htmlFor="email">Email</label>
                         <input onChange={handleInput} value={inputValue.email} className='inputClass' type="email" name="email" />
                     </div>
+                       <input className='submitbutton' style={{ background: singleContennt.btn_background, color: singleContennt.btn_color }}  type="submit" value=  {singleContennt.btn} />
+
                 </form>
-                    <button style={{ background: singleContennt.btn_background, color: singleContennt.btn_color }} >
-                        {singleContennt.btn}
-                    </button>
+                   
             </div>
         </div>
     );
