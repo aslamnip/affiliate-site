@@ -29,7 +29,7 @@ export default async function Page() {
                             {OurWorksData.map(data => <div key={data.id}>
                                 <div className={Styles.image} >
                                     {/* <MyImage /> */}
-                                    <Image
+                                    <img
                                         src={data.tumb_image}
                                         alt="Picture of the author"
                                         width={500}
