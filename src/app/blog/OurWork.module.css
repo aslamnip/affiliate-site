@@ -162,5 +162,9 @@
         height: 10px;
         margin-bottom: 4px;
     }
+    .image:hover .layer {
+    opacity: 0;
+    transition: 0.4s;
+}
     
 }
