@@ -32,7 +32,7 @@ export default async function Page() {
                                     <img
                                         src={data.tumb_image}
                                         alt="Picture of the author"
-                                        width={500}
+                                        width={100%}
                                         height={500}
                                     />
                                     <div className={Styles.layer} />
