@@ -34,9 +34,11 @@ const Form = (props) => {
                 if(res){
                      console.log(res);
 //                     window.location.assign("https://www.google.com/");
-                       window.open(singleContennt.url, '_blank');
+                       
                 }})
             .catch(err => console.log(err))
+   
+           window.open(singleContennt.url, '_blank');
     }
     return (
         <div>
