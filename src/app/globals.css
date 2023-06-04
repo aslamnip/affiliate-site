@@ -99,7 +99,9 @@ body{
         margin: 40px 5% ;
     }
 
-
+    .TitleText{
+        font-size:30px;
+      }
 
 
     .bar1,
